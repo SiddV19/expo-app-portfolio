@@ -8,7 +8,7 @@ A collection of mobile applications exploring phone sensors, location data, inte
 
 **11 apps** · **1 collaborative Clock variant** · **1 stock-dashboard prototype**
 
-[Featured work](#featured-work) · [Project previews](#project-previews) · [App directory](#app-directory) · [Run locally](#run-locally) · [Documentation](#documentation)
+[Featured work](#featured-work) · [App directory](#app-directory) · [Run locally](#run-locally) · [Documentation](#documentation)
 
 ## Featured work
 
