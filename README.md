@@ -8,7 +8,7 @@ A collection of mobile applications exploring phone sensors, location data, inte
 
 **11 apps** · **1 collaborative Clock variant** · **1 stock-dashboard prototype**
 
-[Featured work](#featured-work) · [Interface previews](#interface-previews) · [App directory](#app-directory) · [Run locally](#run-locally) · [Documentation](#documentation)
+[Featured work](#featured-work) · [Project previews](#project-previews) · [App directory](#app-directory) · [Run locally](#run-locally) · [Documentation](#documentation)
 
 ## Featured work
 
@@ -20,22 +20,24 @@ A collection of mobile applications exploring phone sensors, location data, inte
 
 RouteMapper uses the complete collaborative saved implementation. Attribution and original project names are recorded in the project source notes.
 
-## Interface previews
+## Project previews
 
 <table>
   <tr>
-    <td align="center" width="33%"><strong>PainterStarter</strong><br><sub>Touch + SVG drawing</sub></td>
-    <td align="center" width="33%"><strong>Star Rush</strong><br><sub>Game start screen</sub></td>
-    <td align="center" width="33%"><strong>Clock</strong><br><sub>Work / rest intervals</sub></td>
+    <td align="center" width="50%"><strong>Star Rush</strong><br><sub>Tilt-controlled arcade game</sub></td>
+    <td align="center" width="50%"><strong>RouteMapper</strong><br><sub>GPS run tracker</sub></td>
   </tr>
   <tr>
-    <td align="center"><a href="apps/painter-starter/README.md"><img src="docs/assets/previews/painter-starter.png" width="250" alt="PainterStarter web preview with a filled rectangle, circle, and line" /></a></td>
-    <td align="center"><a href="apps/tilt-game/README.md"><img src="docs/assets/previews/tilt-game.png" width="250" alt="Star Rush start screen with rules and start button" /></a></td>
-    <td align="center"><a href="apps/clock/README.md"><img src="docs/assets/previews/clock.png" width="250" alt="Clock interval timer paused in a work phase" /></a></td>
+    <td align="center"><a href="apps/tilt-game/README.md"><img src="docs/assets/previews/tilt-game.png" width="250" alt="Star Rush start screen with game rules and start button" /></a></td>
+    <td align="center"><a href="apps/route-mapper/README.md"><img src="docs/assets/previews/route-mapper.png" width="250" alt="RouteMapper iOS tracker screen with a map and distance, pace, time, and elevation panels" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="apps/tilt-game/README.md">View project</a> · <a href="https://snack.expo.dev/@siddv19/tiltgamevadali">Open in Expo</a></td>
+    <td align="center"><a href="apps/route-mapper/README.md">View project</a> · <a href="https://snack.expo.dev/@siddv19/routemapperarigovadali?platform=ios">Open in Expo</a></td>
   </tr>
 </table>
 
-Captured from the saved Expo Snack web previews. Star Rush shows its menu; gameplay uses physical device motion. [Preview provenance](docs/assets/README.md)
+Star Rush shows its web start screen; RouteMapper shows its iOS simulator map screen before a run. [Preview provenance](docs/assets/README.md)
 
 ## App directory
 
