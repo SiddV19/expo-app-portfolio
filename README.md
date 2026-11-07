@@ -20,24 +20,7 @@ A collection of mobile applications exploring phone sensors, location data, inte
 
 RouteMapper uses the complete collaborative saved implementation. Attribution and original project names are recorded in the project source notes.
 
-## Project previews
 
-<table>
-  <tr>
-    <td align="center" width="50%"><strong>Star Rush</strong><br><sub>Tilt-controlled arcade game</sub></td>
-    <td align="center" width="50%"><strong>RouteMapper</strong><br><sub>GPS run tracker</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="apps/tilt-game/README.md"><img src="docs/assets/previews/tilt-game.png" width="250" alt="Star Rush start screen with game rules and start button" /></a></td>
-    <td align="center"><a href="apps/route-mapper/README.md"><img src="docs/assets/previews/route-mapper.png" width="250" alt="RouteMapper iOS tracker screen with a map and distance, pace, time, and elevation panels" /></a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="apps/tilt-game/README.md">View project</a> · <a href="https://snack.expo.dev/@siddv19/tiltgamevadali">Open in Expo</a></td>
-    <td align="center"><a href="apps/route-mapper/README.md">View project</a> · <a href="https://snack.expo.dev/@siddv19/routemapperarigovadali?platform=ios">Open in Expo</a></td>
-  </tr>
-</table>
-
-Star Rush shows its web start screen; RouteMapper shows its iOS simulator map screen before a run. [Preview provenance](docs/assets/README.md)
 
 ## App directory
 
