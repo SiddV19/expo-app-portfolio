@@ -1,0 +1,20 @@
+{
+  "name": "siddv19-expo-app-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node scripts/apps.mjs start",
+    "setup": "node scripts/apps.mjs setup",
+    "verify:exports": "node scripts/apps.mjs verify",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test services/api-proxy/server.test.mjs",
+    "proxy": "npm --prefix services/api-proxy start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SiddV19/expo-app-portfolio.git"
+  }
+}

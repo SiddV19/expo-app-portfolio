@@ -1,0 +1,23 @@
+{
+  "scope": "Original saved Snack web previews; not physical-device tests",
+  "checks": [
+    {
+      "app": "calculator",
+      "sourceSnack": "https://snack.expo.dev/@siddv19/calculatorappvadali",
+      "check": "Entered 7 + 3 =; display returned 10.",
+      "passed": true
+    },
+    {
+      "app": "clock",
+      "sourceSnack": "https://snack.expo.dev/@siddv19/clockvadali",
+      "check": "Set one-second work/rest periods and one round; started in WORK and completed in DONE at 00:00:00.",
+      "passed": true
+    },
+    {
+      "app": "memory-app",
+      "sourceSnack": "https://snack.expo.dev/@siddv19/memoryappvadali",
+      "check": "Started a board and flipped two cards; move counter advanced from 0 to 1.",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+**/node_modules/
+**/.expo/
+**/dist/
+**/.env*
+!**/.env.example
+**/ios/
+**/android/
+**/*.log
+verification/logs/
+verification/bundles/
+.DS_Store
+*.zip

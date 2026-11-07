@@ -2,7 +2,7 @@
 
 A collection of mobile applications built with React Native, Expo, and JavaScript/JSX during 2025–2026. The projects explore sensors, GPS and maps, persistent storage, timers, scoring, audio, haptics, input validation, SVG drawing, and REST APIs.
 
-This repository contains **12 apps and 1 retained Clock variant**, recovered from the saved siddv19 Expo Snacks. Each app has its own dependencies, lockfile, assets, setup instructions, and original-source link.
+This repository contains **11 apps, 1 retained Clock variant, and 1 stock-dashboard prototype**, recovered from the saved siddv19 Expo Snacks. Each app has its own dependencies, lockfile, assets, setup instructions, and original-source link.
 
 ## Start an app
 
@@ -32,7 +32,10 @@ For iOS/Android, use an Expo Go version that supports the app’s SDK or a match
 | [Times Tables](apps/times-tables) | Multiplication practice app with numeric answer entry and a review of incorrect questions. | [Snack](https://snack.expo.dev/@siddv19/timestablesvadali) |
 | [Calculator](apps/calculator) | Scientific-style calculator with arithmetic, parentheses, powers, square roots, logarithms, and error handling. | [Snack](https://snack.expo.dev/@siddv19/calculatorappvadali) |
 | [Weather App](apps/weather-app) | Coordinate-based weather lookup with current conditions and a multi-day forecast. | [Snack](https://snack.expo.dev/@siddv19/weatherappvadali) |
-| [Stock Watcher](apps/stock-watcher) | Stock-market dashboard with quotes, charts, company details, news, watchlist, and screening views. | [Snack](https://snack.expo.dev/@siddv19/personal-project) |
+
+## Prototype
+
+[Stock Watcher](apps/stock-watcher) remains a prototype. Quote/metric requests use configured live API data, but historical-chart failures fall back to simulated data and the news/company sections contain placeholders. These are not presented as completed live-data features.
 
 ## Retained variants
 
@@ -44,7 +47,7 @@ The original collaborative names and source links are recorded in each variant. 
 
 ## Live API apps
 
-Weather App and Stock Watcher use a small [development API proxy](services/api-proxy). Provider keys belong in the proxy’s local environment file. The Expo apps receive only the proxy URL. The original embedded provider keys are not included.
+Weather App and the Stock Watcher prototype use a small [development API proxy](services/api-proxy). Provider keys belong in the proxy’s local environment file. The Expo apps receive only the proxy URL. The original embedded provider keys are not included.
 
 ## Validation
 
@@ -67,4 +70,3 @@ An export is not a native build or a physical-device test. Individual READMEs st
 - [Original Snack inventory](docs/SNACK_INVENTORY.md)
 
 The React Native Stock Watcher is separate from the Python/PyTorch AI Stock Market Predictor listed as in progress on the résumé.
-
