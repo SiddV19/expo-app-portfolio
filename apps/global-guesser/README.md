@@ -1,12 +1,18 @@
+[← Portfolio](../../README.md) · [Original Snack](https://snack.expo.dev/@siddv19/globalguesservadali) · [Source notes](SOURCE.md)
+
 # GlobalGuesser
+
+**Application · Expo SDK 54 · iOS / Android**
 
 Photo-based location guessing game with map markers, distance-based scores, and saved results.
 
-**Technical focus:** Maps, Haversine distance, scoring, storage.
+## What it demonstrates
 
-[Original Expo Snack](https://snack.expo.dev/@siddv19/globalguesservadali) · [Source provenance](SOURCE.md)
+- A photo prompt and map marker form the location-guessing interaction.
+- Haversine distance connects each guess to a distance-based score.
+- Round progression and local storage retain results across the game flow.
 
-## Run
+## Run locally
 
 From the repository root:
 
@@ -15,20 +21,24 @@ npm run setup -- global-guesser
 npm start -- global-guesser
 ```
 
-Or work directly in this folder: npm ci, followed by npm start. Node.js 22.13+ is required. This export uses Expo SDK 54. Use a runtime that supports this SDK.
+Use Node.js 22.13+ and an Expo runtime that supports SDK 54. You can also run <code>npm ci</code> and <code>npm start</code> directly in this project folder.
 
-This app needs native device APIs. Use the matching Expo Go/runtime or a development build on iOS/Android; the web preview is not a substitute for its hardware features.
+This app uses native device capabilities. Run it on a matching iOS/Android runtime; physical motion, maps, audio, and haptics should be checked on a suitable device.
 
-The saved photo set contains US landmarks. The app name is preserved from the original project.
+## Implementation note
 
-## Verification
+The saved photo set contains US landmarks; the original project name is retained.
 
-- ios: export passed (2026-11-07T02:51:02.776Z)
-- android: export passed (2026-11-07T02:51:13.032Z)
+## Validation
 
-An export checks JavaScript and asset bundling. Device sensors, GPS, sound, and live provider access need the checks below; exports do not certify a native store build.
+| Target | Recorded result |
+| --- | --- |
+| iOS | JS / asset export passed |
+| Android | JS / asset export passed |
 
-## Functional checks
+An export verifies JavaScript and asset bundling. It is separate from a native binary build, a physical-device test, or a live-provider test. See the [validation record](../../verification/README.md) for scope and timestamps.
+
+### Functional checklist
 
 - Open a round, inspect the photo, and place a map marker.
 - Submit a guess and verify distance-based scoring.

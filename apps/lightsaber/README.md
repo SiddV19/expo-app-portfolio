@@ -1,12 +1,18 @@
+[← Portfolio](../../README.md) · [Original Snack](https://snack.expo.dev/@siddv19/lightsabervadali) · [Source notes](SOURCE.md)
+
 # Lightsaber
+
+**Application · Expo SDK 55 · iOS / Android**
 
 Phone-motion lightsaber simulation with orientation-aware controls, sound effects, and haptics.
 
-**Technical focus:** Accelerometer, audio, haptics, orientation.
+## What it demonstrates
 
-[Original Expo Snack](https://snack.expo.dev/@siddv19/lightsabervadali) · [Source provenance](SOURCE.md)
+- Orientation-aware controls use accelerometer input to gate the on/off state.
+- Motion thresholds trigger swing and crash sounds, with cooldowns and haptic feedback.
+- Portrait orientation and sensor-listener cleanup support the native interaction.
 
-## Run
+## Run locally
 
 From the repository root:
 
@@ -15,18 +21,20 @@ npm run setup -- lightsaber
 npm start -- lightsaber
 ```
 
-Or work directly in this folder: npm ci, followed by npm start. Node.js 22.13+ is required. This export uses Expo SDK 55. Use a runtime that supports this SDK.
+Use Node.js 22.13+ and an Expo runtime that supports SDK 55. You can also run <code>npm ci</code> and <code>npm start</code> directly in this project folder.
 
-This app needs native device APIs. Use the matching Expo Go/runtime or a development build on iOS/Android; the web preview is not a substitute for its hardware features.
+This app uses native device capabilities. Run it on a matching iOS/Android runtime; physical motion, maps, audio, and haptics should be checked on a suitable device.
 
-## Verification
+## Validation
 
-- ios: export passed (2026-11-07T02:56:37.611Z)
-- android: export passed (2026-11-07T02:56:47.484Z)
+| Target | Recorded result |
+| --- | --- |
+| iOS | JS / asset export passed |
+| Android | JS / asset export passed |
 
-An export checks JavaScript and asset bundling. Device sensors, GPS, sound, and live provider access need the checks below; exports do not certify a native store build.
+An export verifies JavaScript and asset bundling. It is separate from a native binary build, a physical-device test, or a live-provider test. See the [validation record](../../verification/README.md) for scope and timestamps.
 
-## Functional checks
+### Functional checklist
 
 - Use a physical iPhone or Android device with the matching Expo runtime.
 - Hold upright to turn on; flip the phone to turn off.

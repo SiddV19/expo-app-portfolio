@@ -1,12 +1,18 @@
+[← Portfolio](../../README.md) · [Original Snack](https://snack.expo.dev/@siddv19/whichamivadali) · [Source notes](SOURCE.md)
+
 # Which Am I
+
+**Application · Expo SDK 54 · iOS / Android / Web**
 
 Weighted ten-question car recommendation quiz with multiple screens and result images.
 
-**Technical focus:** Input validation, weighted scoring, navigation.
+## What it demonstrates
 
-[Original Expo Snack](https://snack.expo.dev/@siddv19/whichamivadali) · [Source provenance](SOURCE.md)
+- A ten-question flow combines multiple-choice input with a passenger-count slider.
+- Weighted answers produce an Eco, Sport, Utility, or Luxury car recommendation.
+- Result images and a restart flow connect input validation, scoring, and navigation.
 
-## Run
+## Run locally
 
 From the repository root:
 
@@ -15,19 +21,25 @@ npm run setup -- which-am-i
 npm start -- which-am-i
 ```
 
-Or work directly in this folder: npm ci, followed by npm start. Node.js 22.13+ is required. This export uses Expo SDK 54. Use a runtime that supports this SDK.
+Use Node.js 22.13+ and an Expo runtime that supports SDK 54. You can also run <code>npm ci</code> and <code>npm start</code> directly in this project folder.
 
-A browser preview is available with npm start -- which-am-i --web after setup.
+For a browser preview:
 
-## Verification
+```bash
+npm start -- which-am-i --web
+```
 
-- ios: export passed (2026-11-07T02:49:01.369Z)
-- android: export passed (2026-11-07T02:49:22.785Z)
-- web: export passed (2026-11-07T02:58:28.864Z)
+## Validation
 
-An export checks JavaScript and asset bundling. Device sensors, GPS, sound, and live provider access need the checks below; exports do not certify a native store build.
+| Target | Recorded result |
+| --- | --- |
+| iOS | JS / asset export passed |
+| Android | JS / asset export passed |
+| Web | JS / asset export passed |
 
-## Functional checks
+An export verifies JavaScript and asset bundling. It is separate from a native binary build, a physical-device test, or a live-provider test. See the [validation record](../../verification/README.md) for scope and timestamps.
+
+### Functional checklist
 
 - Complete all ten questions and open the result screen.
 - Select a different set of answers; verify the result can change.

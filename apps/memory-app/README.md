@@ -1,12 +1,18 @@
+[← Portfolio](../../README.md) · [Original Snack](https://snack.expo.dev/@siddv19/memoryappvadali) · [Source notes](SOURCE.md)
+
 # MemoryApp
+
+**Application · Expo SDK 54 · iOS / Android / Web**
 
 Car-logo matching game with shuffled cards, progress tracking, and stored high scores.
 
-**Technical focus:** Randomization, game state, persistent storage.
+## What it demonstrates
 
-[Original Expo Snack](https://snack.expo.dev/@siddv19/memoryappvadali) · [Source provenance](SOURCE.md)
+- Shuffled car-logo pairs create a different matching board.
+- Flip, mismatch, and match state drive the card interactions and move counter.
+- A stored best score connects game completion with local persistence.
 
-## Run
+## Run locally
 
 From the repository root:
 
@@ -15,19 +21,25 @@ npm run setup -- memory-app
 npm start -- memory-app
 ```
 
-Or work directly in this folder: npm ci, followed by npm start. Node.js 22.13+ is required. This export uses Expo SDK 54. Use a runtime that supports this SDK.
+Use Node.js 22.13+ and an Expo runtime that supports SDK 54. You can also run <code>npm ci</code> and <code>npm start</code> directly in this project folder.
 
-A browser preview is available with npm start -- memory-app --web after setup.
+For a browser preview:
 
-## Verification
+```bash
+npm start -- memory-app --web
+```
 
-- ios: export passed (2026-11-07T02:51:24.745Z)
-- android: export passed (2026-11-07T02:51:36.512Z)
-- web: export passed (2026-11-07T02:58:47.901Z)
+## Validation
 
-An export checks JavaScript and asset bundling. Device sensors, GPS, sound, and live provider access need the checks below; exports do not certify a native store build.
+| Target | Recorded result |
+| --- | --- |
+| iOS | JS / asset export passed |
+| Android | JS / asset export passed |
+| Web | JS / asset export passed |
 
-## Functional checks
+An export verifies JavaScript and asset bundling. It is separate from a native binary build, a physical-device test, or a live-provider test. See the [validation record](../../verification/README.md) for scope and timestamps.
+
+### Functional checklist
 
 - Start a game and flip two cards.
 - Verify matches remain visible and mismatches turn over.

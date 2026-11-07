@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Siddharth Vadali — React Native application portfolio</title>
+  <desc id="desc">Eleven apps, one Clock variant, and one prototype, with source, setup guides, and validation notes.</desc>
+  <rect width="1280" height="640" fill="#0C1625"/>
+  <g fill="#243954" opacity=".55">
+    <circle cx="900" cy="282" r="3"/><circle cx="950" cy="282" r="3"/><circle cx="1000" cy="282" r="3"/><circle cx="1050" cy="282" r="3"/><circle cx="1100" cy="282" r="3"/><circle cx="1150" cy="282" r="3"/>
+    <circle cx="900" cy="332" r="3"/><circle cx="950" cy="332" r="3"/><circle cx="1000" cy="332" r="3"/><circle cx="1050" cy="332" r="3"/><circle cx="1100" cy="332" r="3"/><circle cx="1150" cy="332" r="3"/>
+    <circle cx="900" cy="382" r="3"/><circle cx="950" cy="382" r="3"/><circle cx="1000" cy="382" r="3"/><circle cx="1050" cy="382" r="3"/><circle cx="1100" cy="382" r="3"/><circle cx="1150" cy="382" r="3"/>
+    <circle cx="900" cy="432" r="3"/><circle cx="950" cy="432" r="3"/><circle cx="1000" cy="432" r="3"/><circle cx="1050" cy="432" r="3"/><circle cx="1100" cy="432" r="3"/><circle cx="1150" cy="432" r="3"/>
+  </g>
+  <path d="M900 432h50v-50h100v-100h100" fill="none" stroke="#5EEAD4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="900" cy="432" r="7" fill="#0C1625" stroke="#5EEAD4" stroke-width="3"/>
+  <circle cx="1150" cy="282" r="7" fill="#5EEAD4"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="62" y="74" fill="#A4B8D0" font-size="18" font-weight="700" letter-spacing="3">SIDDHARTH VADALI</text>
+    <text x="57" y="183" fill="#F8FAFC" font-size="65" font-weight="700" letter-spacing="-2">React Native</text>
+    <text x="57" y="262" fill="#F8FAFC" font-size="65" font-weight="700" letter-spacing="-2">Application Portfolio</text>
+    <text x="62" y="320" fill="#A7BDD6" font-size="23">Motion. Maps. Games. Interfaces.</text>
+    <g font-size="17">
+      <rect x="62" y="376" width="125" height="44" rx="8" fill="#163044" stroke="#2F5367"/>
+      <text x="83" y="404" fill="#A7F3E5" font-weight="700">11 apps</text>
+      <rect x="201" y="376" width="187" height="44" rx="8" fill="#142338" stroke="#30445E"/>
+      <text x="223" y="404" fill="#D3E0F1">1 Clock variant</text>
+      <rect x="402" y="376" width="164" height="44" rx="8" fill="#142338" stroke="#30445E"/>
+      <text x="423" y="404" fill="#D3E0F1">1 prototype</text>
+    </g>
+    <rect x="1102" y="54" width="116" height="112" rx="18" fill="#15273D" stroke="#35516E"/>
+    <text x="1160" y="128" fill="#5EEAD4" font-size="46" font-weight="700" text-anchor="middle">SV</text>
+    <path d="M62 514h1156" stroke="#2A3E57"/>
+    <text x="62" y="563" fill="#BACCE0" font-size="18">github.com/SiddV19/expo-app-portfolio</text>
+    <text x="1218" y="563" fill="#7F99B8" font-size="13" font-weight="700" letter-spacing="2" text-anchor="end">SELECTED WORK / 2025–2026</text>
+  </g>
+</svg>

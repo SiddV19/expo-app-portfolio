@@ -1,20 +1,27 @@
-# Project names across profiles
+# Project naming guide
 
-This mapping follows the React Native Application Portfolio section of Siddharth_Vadali_Resume.docx (the current file last modified September 29, 2026).
+[← Portfolio](../README.md)
 
-| Résumé project name | GitHub app folder | LinkedIn label |
+Use **React Native Application Portfolio** as the collection title and **2025–2026** as the project period. The selected-app names below match the résumé's portfolio entry.
+
+| Résumé label | GitHub project | LinkedIn label |
 | --- | --- | --- |
-| Which Am I | [apps/which-am-i](../apps/which-am-i) | Which Am I |
-| Lightsaber | [apps/lightsaber](../apps/lightsaber) | Lightsaber |
-| TiltGame | [apps/tilt-game](../apps/tilt-game) | TiltGame (Star Rush) |
-| PainterStarter | [apps/painter-starter](../apps/painter-starter) | PainterStarter |
-| RouteMapper | [apps/route-mapper](../apps/route-mapper) | RouteMapper |
-| GlobalGuesser | [apps/global-guesser](../apps/global-guesser) | GlobalGuesser |
-| MemoryApp | [apps/memory-app](../apps/memory-app) | MemoryApp |
-| Clock | [apps/clock](../apps/clock) | Clock |
-| Times Tables | [apps/times-tables](../apps/times-tables) | Times Tables |
-| Calculator | [apps/calculator](../apps/calculator) | Calculator |
+| Which Am I | [apps/which-am-i](../apps/which-am-i/README.md) | Which Am I |
+| Lightsaber | [apps/lightsaber](../apps/lightsaber/README.md) | Lightsaber |
+| TiltGame | [apps/tilt-game](../apps/tilt-game/README.md) | TiltGame (Star Rush) |
+| PainterStarter | [apps/painter-starter](../apps/painter-starter/README.md) | PainterStarter |
+| RouteMapper | [apps/route-mapper](../apps/route-mapper/README.md) | RouteMapper |
+| GlobalGuesser | [apps/global-guesser](../apps/global-guesser/README.md) | GlobalGuesser |
+| MemoryApp | [apps/memory-app](../apps/memory-app/README.md) | MemoryApp |
+| Clock | [apps/clock](../apps/clock/README.md) | Clock |
+| Times Tables | [apps/times-tables](../apps/times-tables/README.md) | Times Tables |
+| Calculator | [apps/calculator](../apps/calculator/README.md) | Calculator |
 
-Weather App is an additional recovered app. Stock Watcher is an additional prototype with simulated fallback chart data and placeholder news/company sections. RouteMapper uses the complete RouteMapperArigoVadali implementation with its collaborative attribution retained. The Clock suite is a retained variant rather than an extra product category.
+## Additional projects and attribution
 
-Use “React Native Application Portfolio” as the collection title across the résumé and LinkedIn. Keep the project dates at 2025–2026. The stock dashboard is a React Native API project; the separate Python/PyTorch predictor remains an in-progress project.
+- **Weather App** is an additional recovered app.
+- **Stock Watcher** is a React Native prototype, separate from the Python/PyTorch predictor.
+- **RouteMapper** uses the complete RouteMapperArigoVadali collaborative saved implementation.
+- **Clock suite** retains the ClockappPrakashAgnihotriVadali collaborative source name and is presented as a variant.
+
+Original-source links and attribution are retained in each project's SOURCE.md. Keep prototype, collaboration, and validation scope consistent when reusing the [profile wording](PROFILE_TEXT.md).

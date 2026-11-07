@@ -1,72 +1,118 @@
-# Siddharth Vadali — React Native Application Portfolio
+<p align="center">
+  <img src="docs/assets/portfolio-header.svg" width="1280" alt="Siddharth Vadali — React Native application portfolio: device motion, location and mapping, interactive graphics" />
+</p>
 
-A collection of mobile applications built with React Native, Expo, and JavaScript/JSX during 2025–2026. The projects explore sensors, GPS and maps, persistent storage, timers, scoring, audio, haptics, input validation, SVG drawing, and REST APIs.
+# React Native application portfolio
 
-This repository contains **11 apps, 1 retained Clock variant, and 1 stock-dashboard prototype**, recovered from the saved siddv19 Expo Snacks. Each app has its own dependencies, lockfile, assets, setup instructions, and original-source link.
+A collection of mobile applications exploring phone sensors, location data, interactive graphics, games, and everyday utilities. Built with **React Native, Expo, and JavaScript/JSX** during **2025–2026**.
 
-## Start an app
+**11 apps** · **1 collaborative Clock variant** · **1 stock-dashboard prototype**
 
-Install Node.js 22.13 or newer. From this repository’s root:
+[Featured work](#featured-work) · [Interface previews](#interface-previews) · [App directory](#app-directory) · [Run locally](#run-locally) · [Documentation](#documentation)
+
+## Featured work
+
+| Project | Experience | Engineering focus |
+| --- | --- | --- |
+| **[RouteMapper](apps/route-mapper/README.md)** | Record a route, inspect distance/pace/elevation, and reopen saved runs. | GPS updates, Haversine distance, maps, local persistence |
+| **[TiltGame · Star Rush](apps/tilt-game/README.md)** | Steer with phone tilt, catch stars and hearts, and avoid bombs as the pace increases. | Accelerometer input, collision detection, game state, haptics |
+| **[PainterStarter](apps/painter-starter/README.md)** | Draw, fill, select, move, erase, and undo SVG shapes and freehand strokes. | Touch gestures, geometry, SVG rendering, interaction state |
+
+RouteMapper uses the complete collaborative saved implementation. Attribution and original project names are recorded in the project source notes.
+
+## Interface previews
+
+<table>
+  <tr>
+    <td align="center" width="33%"><strong>PainterStarter</strong><br><sub>Touch + SVG drawing</sub></td>
+    <td align="center" width="33%"><strong>Star Rush</strong><br><sub>Game start screen</sub></td>
+    <td align="center" width="33%"><strong>Clock</strong><br><sub>Work / rest intervals</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="apps/painter-starter/README.md"><img src="docs/assets/previews/painter-starter.png" width="250" alt="PainterStarter web preview with a filled rectangle, circle, and line" /></a></td>
+    <td align="center"><a href="apps/tilt-game/README.md"><img src="docs/assets/previews/tilt-game.png" width="250" alt="Star Rush start screen with rules and start button" /></a></td>
+    <td align="center"><a href="apps/clock/README.md"><img src="docs/assets/previews/clock.png" width="250" alt="Clock interval timer paused in a work phase" /></a></td>
+  </tr>
+</table>
+
+Captured from the saved Expo Snack web previews. Star Rush shows its menu; gameplay uses physical device motion. [Preview provenance](docs/assets/README.md)
+
+## App directory
+
+Each project includes its own source, assets, dependency lockfile, setup guide, and original Snack link.
+
+| Project | Focus | Bundle targets |
+| --- | --- | --- |
+| [Which Am I](apps/which-am-i/README.md) | Weighted recommendations · Forms · Navigation | iOS · Android · Web |
+| [Lightsaber](apps/lightsaber/README.md) | Motion sensors · Sound · Haptics | iOS · Android |
+| [TiltGame (Star Rush)](apps/tilt-game/README.md) | Sensor input · Game state · Collision detection | iOS · Android |
+| [PainterStarter](apps/painter-starter/README.md) | Touch input · SVG · Shape manipulation | iOS · Android · Web |
+| [RouteMapper](apps/route-mapper/README.md) | GPS · Distance calculations · Persistence | iOS · Android |
+| [GlobalGuesser](apps/global-guesser/README.md) | Map interaction · Distance-based scoring | iOS · Android |
+| [MemoryApp](apps/memory-app/README.md) | Shuffled cards · Matching state · Saved scores | iOS · Android · Web |
+| [Clock](apps/clock/README.md) | Timers · State transitions · Input validation | iOS · Android · Web |
+| [Times Tables](apps/times-tables/README.md) | Question flows · Answer entry · Review | iOS · Android · Web |
+| [Calculator](apps/calculator/README.md) | Expressions · Numeric operations · Error handling | iOS · Android · Web |
+| [Weather App](apps/weather-app/README.md) | REST APIs · Forecast aggregation · Async state | iOS · Android · Web |
+
+
+### Additional work
+
+| Project | Status | Scope |
+| --- | --- | --- |
+| [Clock suite](apps/clock-suite/README.md) | Collaborative variant | Tabbed interval timer, countdown, and stopwatch; original attribution retained |
+| [Stock Watcher](apps/stock-watcher/README.md) | Prototype | Configured quote/metric requests and a chart UI; simulated chart fallback and placeholder news/company sections |
+
+The stock dashboard is separate from the **Python/PyTorch AI Stock Market Predictor** listed as in progress on the résumé.
+
+## Run locally
+
+Install **Node.js 22.13+**, clone this repository, and choose an app:
 
 ```bash
+git clone https://github.com/SiddV19/expo-app-portfolio.git
+cd expo-app-portfolio
 npm run setup -- calculator
 npm start -- calculator
 ```
 
-For a supported browser preview, add --web to the start command. Run npm start with no app ID to see the available choices. Each app installs independently so the saved Expo SDK 54 and 55 projects do not share incompatible native dependencies.
+Run <code>npm start</code> to list all project IDs. Add <code>--web</code> for a supported browser preview, such as <code>npm start -- calculator --web</code>.
 
-For iOS/Android, use an Expo Go version that supports the app’s SDK or a matching development build. Lightsaber uses SDK 55; the other exports use SDK 54. Native motion and mapping features require a suitable device/runtime.
+For native features, use an Expo Go version or development build matching the app's SDK. **Lightsaber uses SDK 55; the other exports use SDK 54.** Projects install independently.
 
-## Apps
+Weather App and the Stock Watcher prototype require the [local API proxy](services/api-proxy/README.md). Provider credentials stay on that server; the Expo apps receive its URL.
 
-| App | What it does | Source |
-| --- | --- | --- |
-| [Which Am I](apps/which-am-i) | Weighted ten-question car recommendation quiz with multiple screens and result images. | [Snack](https://snack.expo.dev/@siddv19/whichamivadali) |
-| [Lightsaber](apps/lightsaber) | Phone-motion lightsaber simulation with orientation-aware controls, sound effects, and haptics. | [Snack](https://snack.expo.dev/@siddv19/lightsabervadali) |
-| [TiltGame (Star Rush)](apps/tilt-game) | Tilt-controlled arcade game: catch stars, avoid bombs, and collect hearts as the pace increases. | [Snack](https://snack.expo.dev/@siddv19/tiltgamevadali) |
-| [PainterStarter](apps/painter-starter) | Touch drawing canvas with freehand paths, geometric shapes, fill, erasing, movement, and undo. | [Snack](https://snack.expo.dev/@siddv19/painterstartervadali) |
-| [RouteMapper](apps/route-mapper) | GPS run tracker with saved routes, distance and pace calculations, elevation statistics, summaries, and route details. | [Snack](https://snack.expo.dev/@siddv19/routemapperarigovadali) |
-| [GlobalGuesser](apps/global-guesser) | Photo-based location guessing game with map markers, distance-based scores, and saved results. | [Snack](https://snack.expo.dev/@siddv19/globalguesservadali) |
-| [MemoryApp](apps/memory-app) | Car-logo matching game with shuffled cards, progress tracking, and stored high scores. | [Snack](https://snack.expo.dev/@siddv19/memoryappvadali) |
-| [Clock](apps/clock) | Configurable work/rest interval timer with rounds, pause/resume, and reset. | [Snack](https://snack.expo.dev/@siddv19/clockvadali) |
-| [Times Tables](apps/times-tables) | Multiplication practice app with numeric answer entry and a review of incorrect questions. | [Snack](https://snack.expo.dev/@siddv19/timestablesvadali) |
-| [Calculator](apps/calculator) | Scientific-style calculator with arithmetic, parentheses, powers, square roots, logarithms, and error handling. | [Snack](https://snack.expo.dev/@siddv19/calculatorappvadali) |
-| [Weather App](apps/weather-app) | Coordinate-based weather lookup with current conditions and a multi-day forecast. | [Snack](https://snack.expo.dev/@siddv19/weatherappvadali) |
+## Engineering notes
 
-## Prototype
-
-[Stock Watcher](apps/stock-watcher) remains a prototype. Quote/metric requests use configured live API data, but historical-chart failures fall back to simulated data and the news/company sections contain placeholders. These are not presented as completed live-data features.
-
-## Retained variants
-
-| Variant | Scope |
+| Area | Examples |
 | --- | --- |
-| [Clock — collaborative suite](apps/clock-suite) | Tabbed timer collection with an interval timer, countdown, and stopwatch. |
+| Device integration | Accelerometer input, orientation, audio, haptics, foreground GPS |
+| Interaction and state | Quiz scoring, game loops, card matching, drawing tools, timers |
+| Data and persistence | Saved routes/results, forecast aggregation, API loading/error states |
+| Reproducibility | Independent project folders, lockfiles, run guides, original-source links |
 
-The original collaborative names and source links are recorded in each variant. Drafts, starter exercises, and earlier copies are listed in the [Snack inventory](docs/SNACK_INVENTORY.md) rather than presented as extra products.
+### Validation
 
-## Live API apps
+**35 JavaScript/asset exports passed across all 13 project folders:** 13 iOS, 13 Android, and 9 web. The API proxy also has tests for configuration, allowed endpoints, coordinate validation, and credential-safe error responses.
 
-Weather App and the Stock Watcher prototype use a small [development API proxy](services/api-proxy). Provider keys belong in the proxy’s local environment file. The Expo apps receive only the proxy URL. The original embedded provider keys are not included.
-
-## Validation
+Exports verify bundling; physical sensor/GPS/audio behavior and live provider access have separate checklists. See the [validation record](verification/README.md) for exact scope.
 
 ```bash
 npm run validate
 npm test
-npm run setup -- which-am-i
-npm run verify:exports -- which-am-i
+npm run verify:exports -- calculator
 ```
 
-Current result: **13 of 13 app folders have passed both iOS and Android JavaScript/asset exports**. 35 platform exports have passed in total. See the [verification record](verification/README.md) for exact scope and remaining device checks.
+## Documentation
 
-An export is not a native build or a physical-device test. Individual READMEs state what was checked and which sensor, GPS, audio, or live-data checks remain.
+| Guide | Purpose |
+| --- | --- |
+| [Project naming](docs/RESUME_MAPPING.md) | Consistent names across GitHub, LinkedIn, and the résumé |
+| [LinkedIn / résumé copy](docs/PROFILE_TEXT.md) | Ready-to-use project descriptions and bullets |
+| [Validation](verification/README.md) | Export records, preview checks, and remaining device checks |
+| [Source inventory](docs/SNACK_INVENTORY.md) | Saved Snacks, selected implementations, drafts, and earlier versions |
+| [Maintenance notes](docs/MAINTENANCE.md) | Packaging changes and source provenance |
 
-## Portfolio and résumé consistency
+---
 
-- [Project name mapping](docs/RESUME_MAPPING.md)
-- [LinkedIn and résumé project copy](docs/PROFILE_TEXT.md)
-- [Packaging changes](docs/MAINTENANCE.md)
-- [Original Snack inventory](docs/SNACK_INVENTORY.md)
-
-The React Native Stock Watcher is separate from the Python/PyTorch AI Stock Market Predictor listed as in progress on the résumé.
+**Siddharth Vadali** · [GitHub](https://github.com/SiddV19) · React Native / Expo · 2025–2026

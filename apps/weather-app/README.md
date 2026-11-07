@@ -1,12 +1,18 @@
+[← Portfolio](../../README.md) · [Original Snack](https://snack.expo.dev/@siddv19/weatherappvadali) · [Source notes](SOURCE.md)
+
 # Weather App
+
+**Application · Expo SDK 54 · iOS / Android / Web**
 
 Coordinate-based weather lookup with current conditions and a multi-day forecast.
 
-**Technical focus:** REST APIs, forecast aggregation, loading/error states.
+## What it demonstrates
 
-[Original Expo Snack](https://snack.expo.dev/@siddv19/weatherappvadali) · [Source provenance](SOURCE.md)
+- Latitude and longitude input is validated before requesting a forecast.
+- Current and daily forecast views aggregate weather-provider responses.
+- Loading and error states handle asynchronous requests through the local API proxy.
 
-## Run
+## Run locally
 
 From the repository root:
 
@@ -15,23 +21,29 @@ npm run setup -- weather-app
 npm start -- weather-app
 ```
 
-Or work directly in this folder: npm ci, followed by npm start. Node.js 22.13+ is required. This export uses Expo SDK 54. Use a runtime that supports this SDK.
+Use Node.js 22.13+ and an Expo runtime that supports SDK 54. You can also run <code>npm ci</code> and <code>npm start</code> directly in this project folder.
 
-A browser preview is available with npm start -- weather-app --web after setup.
+For a browser preview:
 
-## Live data
+```bash
+npm start -- weather-app --web
+```
 
-Follow [API proxy setup](../../services/api-proxy/README.md). Provider keys stay on the server. Copy this app’s .env.example to .env.local and set EXPO_PUBLIC_API_BASE_URL to the proxy address. A physical phone needs the development computer’s LAN address rather than localhost.
+### API setup
 
-## Verification
+Follow the [development proxy guide](../../services/api-proxy/README.md), configure provider credentials in the proxy's local environment file, and set this app's <code>EXPO_PUBLIC_API_BASE_URL</code>. Use the development computer's LAN address when testing from a phone.
 
-- ios: export passed (2026-11-07T02:53:11.330Z)
-- android: export passed (2026-11-07T02:53:23.421Z)
-- web: export passed (2026-11-07T02:59:41.027Z)
+## Validation
 
-An export checks JavaScript and asset bundling. Device sensors, GPS, sound, and live provider access need the checks below; exports do not certify a native store build.
+| Target | Recorded result |
+| --- | --- |
+| iOS | JS / asset export passed |
+| Android | JS / asset export passed |
+| Web | JS / asset export passed |
 
-## Functional checks
+An export verifies JavaScript and asset bundling. It is separate from a native binary build, a physical-device test, or a live-provider test. See the [validation record](../../verification/README.md) for scope and timestamps.
+
+### Functional checklist
 
 - Start the API proxy with your OpenWeather key.
 - Look up valid coordinates and inspect current and daily conditions.

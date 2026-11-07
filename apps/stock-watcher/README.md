@@ -1,12 +1,20 @@
+[← Portfolio](../../README.md) · [Original Snack](https://snack.expo.dev/@siddv19/personal-project) · [Source notes](SOURCE.md)
+
 # Stock Watcher (prototype)
+
+**Prototype · Expo SDK 54 · iOS / Android / Web**
+
+> **Prototype status:** historical-chart failures use simulated data. News and company-profile views contain placeholders, and dark mode is unfinished.
 
 Stock dashboard prototype with live quote/metric requests, chart UI, a simulated chart fallback, and placeholder news/company sections.
 
-**Technical focus:** REST APIs, SVG charts, asynchronous state.
+## What it demonstrates
 
-[Original Expo Snack](https://snack.expo.dev/@siddv19/personal-project) · [Source provenance](SOURCE.md)
+- Configured quote and metric requests feed a stock-dashboard interface.
+- The chart interface includes a simulated-data fallback when historical data is unavailable.
+- News/company sections contain placeholders; dark mode is unfinished.
 
-## Run
+## Run locally
 
 From the repository root:
 
@@ -15,27 +23,33 @@ npm run setup -- stock-watcher
 npm start -- stock-watcher
 ```
 
-Or work directly in this folder: npm ci, followed by npm start. Node.js 22.13+ is required. This export uses Expo SDK 54. Use a runtime that supports this SDK.
+Use Node.js 22.13+ and an Expo runtime that supports SDK 54. You can also run <code>npm ci</code> and <code>npm start</code> directly in this project folder.
 
-A browser preview is available with npm start -- stock-watcher --web after setup.
+For a browser preview:
 
-## Live data
+```bash
+npm start -- stock-watcher --web
+```
 
-Follow [API proxy setup](../../services/api-proxy/README.md). Provider keys stay on the server. Copy this app’s .env.example to .env.local and set EXPO_PUBLIC_API_BASE_URL to the proxy address. A physical phone needs the development computer’s LAN address rather than localhost.
+### API setup
 
-**Status: Prototype.** Historical-chart failures use simulated data. News and company-profile sections contain placeholders, and dark mode is unfinished. These features are not presented as completed live-data functionality.
+Follow the [development proxy guide](../../services/api-proxy/README.md), configure provider credentials in the proxy's local environment file, and set this app's <code>EXPO_PUBLIC_API_BASE_URL</code>. Use the development computer's LAN address when testing from a phone.
 
-This React Native application is separate from the Python/PyTorch AI Stock Market Predictor marked “In Progress” on the résumé. Live quotes and historical data require provider access. Screening and estimate displays are application features, not validated investment predictions.
+## Implementation note
 
-## Verification
+This React Native prototype is separate from the Python/PyTorch AI Stock Market Predictor listed as in progress on the résumé.
 
-- ios: export passed (2026-11-07T02:53:33.515Z)
-- android: export passed (2026-11-07T02:53:42.856Z)
-- web: export passed (2026-11-07T02:59:49.723Z)
+## Validation
 
-An export checks JavaScript and asset bundling. Device sensors, GPS, sound, and live provider access need the checks below; exports do not certify a native store build.
+| Target | Recorded result |
+| --- | --- |
+| iOS | JS / asset export passed |
+| Android | JS / asset export passed |
+| Web | JS / asset export passed |
 
-## Functional checks
+An export verifies JavaScript and asset bundling. It is separate from a native binary build, a physical-device test, or a live-provider test. See the [validation record](../../verification/README.md) for scope and timestamps.
+
+### Functional checklist
 
 - Start the API proxy with your Finnhub key.
 - Request a quote and open a stock chart.

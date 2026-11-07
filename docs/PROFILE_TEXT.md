@@ -1,32 +1,34 @@
-# Consistent project copy
+# Portfolio wording
+
+[← Portfolio](../README.md)
 
 ## LinkedIn project
 
-**Title:** React Native Application Portfolio
-
-**Dates:** 2025–2026
-
+**Title:** React Native Application Portfolio  
+**Dates:** 2025–2026  
 **Project link:** https://github.com/SiddV19/expo-app-portfolio
 
-**Description:**
+### Description
 
-Built a collection of React Native and Expo applications using JavaScript/JSX, including a GPS route tracker, photo-based location guessing game, tilt-controlled arcade game, drawing canvas, memory game, car recommendation quiz, timers, and calculator. Implemented sensor input, mapping, persistent storage, audio and haptics, scoring, input validation, and reusable interface logic. Organized runnable source, assets, setup instructions, and verification notes on GitHub.
+Developed a React Native and Expo portfolio exploring mobile sensors, GPS mapping, interactive SVG drawing, and application state. Projects include a route tracker, tilt-controlled game, drawing tool, memory game, car recommendation quiz, timers, and calculator. Implemented distance calculations, collision detection, local persistence, audio, and haptic feedback. Published source code, setup guides, and validation records on GitHub, with collaborative work credited in the project notes.
 
-**Skills:** React Native, Expo, JavaScript, Git/GitHub, REST APIs, Mobile Application Development.
+**Skills:** React Native · Expo · JavaScript / JSX · REST APIs · Git / GitHub · Mobile Development
 
-Use https://github.com/SiddV19/expo-app-portfolio as the project link and in the LinkedIn Featured section.
-
-## Résumé project bullets
+## Résumé project entry
 
 **React Native Application Portfolio | React Native, Expo, JavaScript/JSX | 2025–2026**
 
-- Built mobile applications using accelerometer input, GPS mapping, persistent storage, timers, audio, haptics, and REST APIs.
-- Implemented weighted quiz scoring, distance calculations, interactive SVG drawing, and input validation; documented runnable projects and setup on GitHub.
+- Developed mobile applications using accelerometer input, GPS mapping, local persistence, timers, audio, haptics, and REST APIs.
+- Implemented weighted quiz scoring, geospatial distance calculations, interactive SVG drawing, and input validation; documented reproducible setup and validation on GitHub.
 
-## Short featured-project caption
+Use the [project naming guide](RESUME_MAPPING.md) for the selected-app list.
 
-React Native and Expo apps exploring GPS, phone sensors, drawing, games, and timers. Source code, assets, setup instructions, and verification notes are included.
+## LinkedIn Featured caption
 
-## Claims to keep accurate
+React Native and Expo projects exploring device motion, mapping, drawing, games, and everyday tools. Includes source code, assets, setup instructions, and validation notes.
 
-Describe JavaScript/asset exports as exports. Only describe physical-device tests, store releases, real users, or performance results after those have actually been verified. The collaborative Clock and RouteMapper implementations retain their original source attribution. Stock Watcher remains a React Native prototype with simulated chart fallbacks and placeholder news/company sections. The Python/PyTorch predictor remains separate and in progress.
+## Scope
+
+The main collection contains 11 apps and a retained Clock variant. Stock Watcher is separately labeled as a prototype with simulated chart fallback data and placeholder news/company sections. The Python/PyTorch AI Stock Market Predictor remains a separate in-progress project.
+
+Describe source exports as exports. Add claims about native builds, physical-device tests, releases, user counts, or performance only when those results have been verified.

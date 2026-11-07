@@ -1,12 +1,18 @@
+[← Portfolio](../../README.md) · [Original Snack](https://snack.expo.dev/@siddv19/routemapperarigovadali) · [Source notes](SOURCE.md)
+
 # RouteMapper
+
+**Application · Expo SDK 54 · iOS / Android**
 
 GPS run tracker with saved routes, distance and pace calculations, elevation statistics, summaries, and route details.
 
-**Technical focus:** GPS, maps, geospatial calculations, persistent storage, elevation.
+## What it demonstrates
 
-[Original Expo Snack](https://snack.expo.dev/@siddv19/routemapperarigovadali) · [Source provenance](SOURCE.md)
+- Foreground GPS updates draw a recorded path and feed distance, time, and pace calculations.
+- Run summaries include elevation information and route statistics.
+- Named routes are stored locally and can be reopened in a detail view.
 
-## Run
+## Run locally
 
 From the repository root:
 
@@ -15,18 +21,24 @@ npm run setup -- route-mapper
 npm start -- route-mapper
 ```
 
-Or work directly in this folder: npm ci, followed by npm start. Node.js 22.13+ is required. This export uses Expo SDK 54. Use a runtime that supports this SDK.
+Use Node.js 22.13+ and an Expo runtime that supports SDK 54. You can also run <code>npm ci</code> and <code>npm start</code> directly in this project folder.
 
-This app needs native device APIs. Use the matching Expo Go/runtime or a development build on iOS/Android; the web preview is not a substitute for its hardware features.
+This app uses native device capabilities. Run it on a matching iOS/Android runtime; physical motion, maps, audio, and haptics should be checked on a suitable device.
 
-## Verification
+## Implementation note
 
-- ios: export passed (2026-11-07T02:57:53.765Z)
-- android: export passed (2026-11-07T02:58:06.072Z)
+This is the complete RouteMapperArigoVadali collaborative implementation. Its source name and provenance are retained in SOURCE.md; the incomplete earlier save is documented in the inventory.
 
-An export checks JavaScript and asset bundling. Device sensors, GPS, sound, and live provider access need the checks below; exports do not certify a native store build.
+## Validation
 
-## Functional checks
+| Target | Recorded result |
+| --- | --- |
+| iOS | JS / asset export passed |
+| Android | JS / asset export passed |
+
+An export verifies JavaScript and asset bundling. It is separate from a native binary build, a physical-device test, or a live-provider test. See the [validation record](../../verification/README.md) for scope and timestamps.
+
+### Functional checklist
 
 - Grant foreground location access on a physical device.
 - Start a run and move; check the path, distance, elapsed time, and pace.

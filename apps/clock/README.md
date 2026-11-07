@@ -1,12 +1,26 @@
+[← Portfolio](../../README.md) · [Original Snack](https://snack.expo.dev/@siddv19/clockvadali) · [Source notes](SOURCE.md)
+
 # Clock
+
+**Application · Expo SDK 54 · iOS / Android / Web**
 
 Configurable work/rest interval timer with rounds, pause/resume, and reset.
 
-**Technical focus:** Timers, input validation, lifecycle cleanup.
+## What it demonstrates
 
-[Original Expo Snack](https://snack.expo.dev/@siddv19/clockvadali) · [Source provenance](SOURCE.md)
+- Configurable work time, rest time, and rounds drive an interval timer.
+- Start, pause/resume, and reset actions manage the timer's state transitions.
+- Input validation, time formatting, and ticker cleanup support the interaction.
 
-## Run
+## Interface preview
+
+<p align="center">
+<img src="../../docs/assets/previews/clock.png" width="300" alt="Clock web preview" />
+</p>
+
+Interval timer paused during a work phase. Captured from the saved Expo Snack web preview.
+
+## Run locally
 
 From the repository root:
 
@@ -15,19 +29,25 @@ npm run setup -- clock
 npm start -- clock
 ```
 
-Or work directly in this folder: npm ci, followed by npm start. Node.js 22.13+ is required. This export uses Expo SDK 54. Use a runtime that supports this SDK.
+Use Node.js 22.13+ and an Expo runtime that supports SDK 54. You can also run <code>npm ci</code> and <code>npm start</code> directly in this project folder.
 
-A browser preview is available with npm start -- clock --web after setup.
+For a browser preview:
 
-## Verification
+```bash
+npm start -- clock --web
+```
 
-- ios: export passed (2026-11-07T02:51:44.848Z)
-- android: export passed (2026-11-07T02:51:53.362Z)
-- web: export passed (2026-11-07T02:58:56.541Z)
+## Validation
 
-An export checks JavaScript and asset bundling. Device sensors, GPS, sound, and live provider access need the checks below; exports do not certify a native store build.
+| Target | Recorded result |
+| --- | --- |
+| iOS | JS / asset export passed |
+| Android | JS / asset export passed |
+| Web | JS / asset export passed |
 
-## Functional checks
+An export verifies JavaScript and asset bundling. It is separate from a native binary build, a physical-device test, or a live-provider test. See the [validation record](../../verification/README.md) for scope and timestamps.
+
+### Functional checklist
 
 - Set work/rest periods to one second and rounds to one.
 - Start; verify work, rest, and completion.
