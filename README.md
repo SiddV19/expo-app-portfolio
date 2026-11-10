@@ -2,15 +2,13 @@
   <img src="docs/assets/portfolio-header.svg" width="1280" alt="Siddharth Vadali — React Native application portfolio: device motion, location and mapping, interactive graphics" />
 </p>
 
-# Application and AI project portfolio
+# React Native application portfolio
 
 A collection of mobile applications exploring phone sensors, location data, interactive graphics, games, and everyday utilities. Built with **React Native, Expo, and JavaScript/JSX** during **2025–2026**.
 
-The [AI projects](#ai-projects) section also documents Python/PyTorch work developed in Google Colab.
-
 **11 apps** · **1 collaborative Clock variant** · **1 stock-dashboard prototype**
 
-[Featured work](#featured-work) · [App directory](#app-directory) · [AI projects](#ai-projects) · [Run locally](#run-locally) · [Documentation](#documentation)
+[Featured work](#featured-work) · [App directory](#app-directory) · [Run locally](#run-locally) · [Documentation](#documentation)
 
 ## Featured work
 
@@ -50,17 +48,7 @@ Each project includes its own source, assets, dependency lockfile, setup guide, 
 | [Clock suite](apps/clock-suite/README.md) | Collaborative variant | Tabbed interval timer, countdown, and stopwatch; original attribution retained |
 | [Stock Watcher](apps/stock-watcher/README.md) | Prototype | Configured quote/metric requests and a chart UI; simulated chart fallback and placeholder news/company sections |
 
-The stock dashboard is separate from the [Python/PyTorch AI Stock Market Predictor](ai-projects/stock-market-predictor/README.md).
-
-## AI projects
-
-Python and machine-learning projects, with source availability recorded for each entry.
-
-| Project | Focus | Available source |
-| --- | --- | --- |
-| **[AI Stock Market Predictor](ai-projects/stock-market-predictor/README.md)** | PyTorch time-series training, mini-batches, backpropagation, and inverse scaling; Harvard AI bootcamp learning project | Shared Colab training/inference cell; full original notebook pending |
-
-See the [AI project directory](ai-projects/README.md) and [LinkedIn project wording](docs/PROFILE_TEXT.md#ai-project-for-linkedin).
+The stock dashboard is separate from the [Python/PyTorch AI Stock Market Predictor](https://github.com/SiddV19/AI-projects/tree/main/stock-market-predictor), which lives in the dedicated [AI Projects repository](https://github.com/SiddV19/AI-projects).
 
 ## Run locally
 
@@ -112,5 +100,4 @@ npm run verify:exports -- calculator
 
 ---
 
-**Siddharth Vadali** · [GitHub](https://github.com/SiddV19) · React Native / Expo · Python / PyTorch
-
+**Siddharth Vadali** · [GitHub](https://github.com/SiddV19) · React Native / Expo · 2025–2026
