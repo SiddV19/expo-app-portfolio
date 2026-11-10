@@ -25,3 +25,12 @@ Use **React Native Application Portfolio** as the collection title and **2025–
 - **Clock suite** retains the ClockappPrakashAgnihotriVadali collaborative source name and is presented as a variant.
 
 Original-source links and attribution are retained in each project's SOURCE.md. Keep prototype, collaboration, and validation scope consistent when reusing the [profile wording](PROFILE_TEXT.md).
+
+## AI projects
+
+| Résumé label | GitHub project | LinkedIn label |
+| --- | --- | --- |
+| AI Stock Market Predictor | [ai-projects/stock-market-predictor](../ai-projects/stock-market-predictor/README.md) | AI Stock Market Predictor \| Python & PyTorch |
+
+The AI predictor is a Harvard AI bootcamp learning project. Its shared training/inference cell is published; the complete original Colab notebook is pending. Keep it distinct from the React Native Stock Watcher dashboard.
+
