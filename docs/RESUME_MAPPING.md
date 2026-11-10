@@ -4,7 +4,7 @@
 
 Use **React Native Application Portfolio** as the collection title and **2025–2026** as the project period. The selected-app names below match the résumé's portfolio entry.
 
-| Résumé label | GitHub project | LinkedIn label |
+| Résumé label | GitHub project | Display label |
 | --- | --- | --- |
 | Which Am I | [apps/which-am-i](../apps/which-am-i/README.md) | Which Am I |
 | Lightsaber | [apps/lightsaber](../apps/lightsaber/README.md) | Lightsaber |
@@ -28,4 +28,4 @@ Original-source links and attribution are retained in each project's SOURCE.md. 
 
 ## AI projects
 
-The Python/PyTorch AI Stock Market Predictor is maintained in the separate [AI Projects repository](https://github.com/SiddV19/AI-projects). Use its [LinkedIn wording](https://github.com/SiddV19/AI-projects/blob/main/docs/LINKEDIN.md) for that project.
+The Python/PyTorch AI Stock Market Predictor is maintained in the separate [AI Projects repository](https://github.com/SiddV19/AI-projects).

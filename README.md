@@ -92,8 +92,8 @@ npm run verify:exports -- calculator
 
 | Guide | Purpose |
 | --- | --- |
-| [Project naming](docs/RESUME_MAPPING.md) | Consistent names across GitHub, LinkedIn, and the résumé |
-| [LinkedIn / résumé copy](docs/PROFILE_TEXT.md) | Ready-to-use project descriptions and bullets |
+| [Project naming](docs/RESUME_MAPPING.md) | Consistent names across GitHub and the résumé |
+| [Project descriptions / résumé copy](docs/PROFILE_TEXT.md) | Ready-to-use project descriptions and bullets |
 | [Validation](verification/README.md) | Export records, preview checks, and remaining device checks |
 | [Source inventory](docs/SNACK_INVENTORY.md) | Saved Snacks, selected implementations, drafts, and earlier versions |
 | [Maintenance notes](docs/MAINTENANCE.md) | Packaging changes and source provenance |

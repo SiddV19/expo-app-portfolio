@@ -2,7 +2,7 @@
 
 [← Portfolio](../README.md)
 
-## LinkedIn project
+## Project overview
 
 **Title:** React Native Application Portfolio  
 **Dates:** 2025–2026  
@@ -23,12 +23,12 @@ Developed a React Native and Expo portfolio exploring mobile sensors, GPS mappin
 
 Use the [project naming guide](RESUME_MAPPING.md) for the selected-app list.
 
-## LinkedIn Featured caption
+## Short description
 
 React Native and Expo projects exploring device motion, mapping, drawing, games, and everyday tools. Includes source code, assets, setup instructions, and validation notes.
 
 ## Scope
 
-The main collection contains 11 apps and a retained Clock variant. Stock Watcher is separately labeled as a prototype with simulated chart fallback data and placeholder news/company sections. The Python/PyTorch AI Stock Market Predictor is maintained in the separate [AI Projects repository](https://github.com/SiddV19/AI-projects), with its own [LinkedIn wording](https://github.com/SiddV19/AI-projects/blob/main/docs/LINKEDIN.md).
+The main collection contains 11 apps and a retained Clock variant. Stock Watcher is separately labeled as a prototype with simulated chart fallback data and placeholder news/company sections. The Python/PyTorch AI Stock Market Predictor is maintained in the separate [AI Projects repository](https://github.com/SiddV19/AI-projects).
 
 Describe source exports as exports. Add claims about native builds, physical-device tests, releases, user counts, or performance only when those results have been verified.
